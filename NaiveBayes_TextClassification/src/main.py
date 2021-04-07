@@ -14,7 +14,7 @@ def main():
     This is the main function which is used to run all the algorithms
     :return:
     """
-    evaluation_metrics = evaluation_metrics_Multi_Nomial_NB.evaluate_multinomial_NB(data_set_name)
+    evaluation_metrics = evaluationMetrics.evaluate_multinomial_NB(data_set_name)
     print("The accuracy is", evaluation_metrics[0])
     print("The Precision is", evaluation_metrics[1])
     print("The Recall is", evaluation_metrics[2])
