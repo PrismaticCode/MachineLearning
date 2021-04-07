@@ -56,7 +56,6 @@ def train_multinomial_NB(spam_email_bag_of_words, ham_email_bag_of_words, text_i
 def test_multinomial_naive_bayes(prior, conditional_probability, conditional_probability_of_non_occurring_word,
                                  an_email_bag_of_words_test):
     """
-
     :param conditional_probability_of_non_occurring_word: This is the conditional probability for each word in the testing set which is not in the training data
     :param prior: This is the prior for all classes
     :param conditional_probability:  This is the conditional probability for each word in vocabulary in spam and ham data
