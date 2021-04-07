@@ -1,6 +1,6 @@
 import sys
 import warnings
-import evaluation_metrics_Multi_Nomial_NB
+import evaluationMetrics
 
 warnings.filterwarnings("ignore")
 
