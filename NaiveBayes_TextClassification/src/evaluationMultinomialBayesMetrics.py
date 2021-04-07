@@ -1,5 +1,5 @@
 import bagofWords
-import evaluationMetrics
+import evaluation_Metrics
 import multinomialBayes
 
 
@@ -41,8 +41,8 @@ def evaluate_multinomial_NB(dataset_name):
     total_actual = spam_actual + ham_actual
     total_predict = spam_predict + ham_predict
     # Now we find the evaluation metrics for the method
-    accuracy = evaluationMetrics.accuracy(total_actual, total_predict)
-    precision = evaluationMetrics.precision(total_actual, total_predict)
-    recall = evaluationMetrics.recall(total_actual, total_predict)
-    f1_score = evaluationMetrics.f1_score(recall, precision)
+    accuracy = evaluation_Metrics.accuracy(total_actual, total_predict)
+    precision = evaluation_Metrics.precision(total_actual, total_predict)
+    recall = evaluation_Metrics.recall(total_actual, total_predict)
+    f1_score = evaluation_Metrics.f1_score(recall, precision)
     return accuracy, precision, recall, f1_score
