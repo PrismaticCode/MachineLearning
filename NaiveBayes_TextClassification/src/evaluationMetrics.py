@@ -1,6 +1,6 @@
-import bag_of_words
-import evaluation_metrics
-import multi_nomial_naive_bayes
+import bagofWords
+import evaluationMetrics
+import multinomialBayes
 
 
 def evaluate_multinomial_NB(dataset_name):
