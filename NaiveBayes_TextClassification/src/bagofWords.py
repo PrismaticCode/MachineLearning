@@ -16,7 +16,7 @@ def import_train_data(data_set_name, train_data_type):
     files_spam = []
     total_data = ""
     path = os.path.join(os.getcwd(), data_set_name)
-    if train_data_type == True:
+    if train_data_type:
         path = os.path.join(path, "train")
     else:
         path = os.path.join(path, "test")
@@ -56,7 +56,6 @@ def convert_to_bag_of_words(dataset_name, train_data_type):
         if each_word in total_file_dictionary:
             continue
         else:
-            # I got the list of stem words from the nltk library
             if each_word not in ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've",
                                  "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his',
                                  'himself', 'she', "she's", 'her', 'hers', 'herself', 'it', "it's", 'its', 'itself',
